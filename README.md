@@ -1,4 +1,4 @@
-#Enzyme Tests
+## Enzyme Tests
 
 This is a project to study React tests with Jest and Enzyme.
 
