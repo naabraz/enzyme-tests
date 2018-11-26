@@ -29,4 +29,12 @@ describe('List tests', () => {
     //Expect the child of the first item to be an array
     expect(wrapper.find('.item').get(0).props.children).toEqual('John')
   })
+
+  it('renders message when list is empty', () => {
+    const items = []
+    const wrapper = shallow(<List items={items} />)
+
+    //Expect the child of the first item to be an array
+    expect(wrapper.contains(<span className="empty-message">No items in list</span>)).toBeTruthy()
+  })
 })
